@@ -12,13 +12,6 @@ client.on('message', (message) => {
   }
 });
 
-client.on("messageCreate", async msg => {
-  if (msg.content === "!chino") {
-    msg.reply("https://chino.is-a.dev/chino");
-  }
-});
-
-
 client.once('ready', () => {
   console.log(`Online ${client.user.tag}`);
 });
